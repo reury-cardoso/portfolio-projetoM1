@@ -264,7 +264,7 @@ color: white !important;
   .panel img{
     padding: 5px;
     width: 100%;
-    content: url(/assets/skills-panel-mobile.svg);
+    content: url(../assets/skills-panel-mobile.svg);
   }
 
   .skill-2 {
