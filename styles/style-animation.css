@@ -1,0 +1,88 @@
+
+.menu li {
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+
+.menu li:hover {
+  text-shadow: 2px 2px 4px rgba(225, 116, 0, 0.5);
+}
+
+
+#link-contact, .social ion-icon, .panel img, .card-main article {
+  transition: transform 0.4s ease-in-out;
+}
+
+#link-contact:hover, .social ion-icon:hover, .panel img:hover, .card-main article:hover {
+  transform: scale(1.11) !important;
+}
+
+body {
+  opacity: 0;
+  animation: appear 2s forwards;
+}
+
+@keyframes appear {
+  0%{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 1.5px;
+}
+
+
+footer span:before {
+  content: " 💙 ";
+}
+
+footer span:hover:before {
+  content: "❤️";
+}
+
+@-webkit-keyframes pulsar-coracao {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes pulsar-coracao {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+footer span {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+footer span:hover,
+footer span:focus,
+footer span:active {
+  -webkit-animation-name: pulsar-coracao;
+  animation-name: pulsar-coracao;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}

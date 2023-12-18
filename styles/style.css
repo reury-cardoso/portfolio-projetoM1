@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.menu-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  color: #ff6600;
+}
+
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 900;
+  margin-left: 25px;
+}
+
+.social a {
+  text-decoration: none;
+  color: #001f3f;
+  margin: 0px 8px;
+}
+
+.social a ion-icon {
+  font-size: 25px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  margin-right: 25px;
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ff6600;
+}
+
+
+#introduction {
+  display: flex;
+  margin: 20px;
+}
+
+#link-contact {
+  background-color: #FF6600;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+#link-contact a {
+color: white !important;
+}
+
+
+.text {
+  margin-left: 70px;
+  margin-top: 70px;
+}
+
+.initial-text {
+  margin-bottom: 50px;
+  font-size: 35px;
+  color: #001f3f;
+}
+
+.biography {
+  background-color: #e65100;
+  padding: 30px 18px;
+  color: white;
+  border-radius: 20px;
+}
+
+.img-young {
+  width: 650px;
+  margin-right: 50px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 38px;
+}
+
+.skills-panel span {
+  margin-left: 90px;
+}
+
+.panel span {
+  font-size: 45px;
+  font-weight: 900;
+  color: #ff6600;
+}
+
+.panel img {
+  padding: 40px 190px 0px 190px;
+}
+
+.skill-2 {
+  background-color: #DFDFDF;
+  padding: 10px 9px;
+  border-radius: 14px;
+  font-weight: 600;
+  color: #445964;
+  margin-right: 14px;
+}
+
+.skills-text {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 60px; 
+
+}
+
+.skills-text p {
+  font-weight: 500;
+  font-size: 22px;
+  color: #FF6600;
+}
+
+#activities {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.text-activities {
+  margin-left: 90px;
+  font-size: 45px;
+  font-weight: 900;
+  color: #ff6600;
+}
+
+.main-activities {
+  text-align: center;
+}
+
+.main-activities span {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #DFDFDF;
+  padding: 10px 9px;
+  border-radius: 14px;
+  font-weight: 600;
+  color: #445964;
+
+}
+
+.card-main {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 200px;
+  margin: 40px 30px 40px 30px;
+}
+
+.card-main article {
+  background: #E65100;
+  width: 560px;
+  height: 340px;
+  border-radius: 20px;
+  color: white;
+}
+
+.card-main article img {
+  width: 95%;
+  border-radius: 14px;
+  margin-top: 8px;
+}
+
+.card-main article h2 {
+  margin-top: 6px;
+}
+
+.card-main article p {
+  margin: 6px 8px 0px 8px;
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+  .img-young {
+
+    display: none;
+  }
+
+
+  #introduction {
+    margin: 0;
+  }
+
+  .text {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  
+
+}
+
+@media only screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-main {
+    padding: 0;
+    margin-top: 20px;
+    align-items: center;
+    font-size: 1px;
+  }
+  .logo {
+    margin-left: 8px;
+  }
+
+  .social a {
+    margin: 0px 4px;
+  }
+
+  .img-young {
+    display: none !important;
+  }
+
+  #introduction {
+    margin: 20px 0 0 0;
+  }
+
+  .text {
+    margin: 0;
+    
+  }
+
+  .initial-text {
+    font-size: 25px;
+    margin: 8px 8px 20px;
+  }
+
+  .biography {
+    margin: 8px 8px 0px;
+  }
+
+  .panel span {
+    font-size: 28px;
+  }
+
+  .skills-panel span {
+    margin: 0 8px 20px;
+  }
+
+  .panel span img {
+    display: none;
+  }
+
+  .panel img{
+    padding: 5px;
+    width: 100%;
+    content: url(/assets/skills-panel-mobile.svg);
+  }
+
+  .skill-2 {
+    margin: 5px 8px 8px !important;
+  }
+
+  .skills-text { 
+    font-size: 15px;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .skills-text p {
+    font-size: 15px;
+  }
+
+  .text-activities {
+    font-size: 28px;
+    margin: 8px 8px 20px;
+  }
+
+  .main-activities span {
+    font-size: 15px;
+    margin: 0 8px 8px
+  }
+
+  .card-main {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card-main article {
+    width: 94%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
