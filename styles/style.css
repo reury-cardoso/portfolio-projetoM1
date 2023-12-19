@@ -186,6 +186,12 @@ color: white !important;
   margin: 6px 8px 0px 8px;
 }
 
+.card-main article p a {
+  color: #001f3f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 
 @media only screen and (max-width: 1300px) {
 
